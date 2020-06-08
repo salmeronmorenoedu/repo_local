@@ -9,21 +9,10 @@ function operaciones(op)
 {
 
     var ops = {
-        sumar: function sumarNumeros(n1, n2) {
-            return (parseInt(n1) + parseInt(n2));
-        },
-
-        restar: function restarNumeros(n1, n2) {
-            return (parseInt(n1) - parseInt(n2));
-        },
         
         multiplicar: function multiplicarNumeros(n1, n2) {
             return (parseInt(n1) * parseInt(n2));
         },
-
-        dividir: function dividirNumeros(n1, n2) {
-            return (parseInt(n1) / parseInt(n2));
-        }
 
 
     };
@@ -47,22 +36,12 @@ function operaciones(op)
     else {
     //Si se han introducido los números en ámbas cajas, operamos:
         switch(op) {
-            case 'sumar':
-                var resultado = ops.sumar(num1, num2);
-                alert (resultado);
-                break;
-            case 'restar':
-                var resultado = ops.restar(num1, num2);
-                alert (resultado);
-                break;
+
             case 'multiplicar':
                 var resultado = ops.multiplicar(num1, num2);
                 alert(resultado);
                 break;
-            case 'dividir':
-                var resultado = ops.dividir(num1, num2);
-                alert(resultado);
-                break;
+
 
         }
     }
